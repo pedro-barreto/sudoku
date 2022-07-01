@@ -1,0 +1,109 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#titulo h1{
+
+    text-align: center;
+    margin: 20px auto 80px;
+    font-size: 3em;
+
+}
+
+.tabela{
+
+    text-align: center;
+    width: 50%;
+    float: left;
+
+}
+
+.tabela h1{
+
+    margin-bottom: 20px;
+
+}
+
+.tabela input[type=text]{
+
+    width: 40px;
+    height: 30px;
+    font-size: larger;
+    padding-left: 14px;
+    border: dashed 1px black;
+
+}
+
+#tabelaInicial{
+
+    text-align: center;
+
+}
+
+.certo{
+
+    background-color: rgba(0, 255, 0, 0.2);
+
+}
+
+.errado{
+
+    background-color: rgba(255, 0, 0, 0.2);
+
+}
+
+#botoes input{
+    
+    margin: 30px 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+
+}
+
+#botoes input:hover{
+
+    background-color: whitesmoke;
+
+}
+
+#tentativas{
+
+    margin: 15px 0px;
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+
+@media screen and (max-width:440px){
+
+    #botoes input{
+
+        padding: 10px 10px;
+    
+    }
+
+    .tabela input[type=text]{
+
+        width: 30px;
+        height: 20px;
+        font-size: medium;
+        padding-left: 8px;
+    
+    }
+
+}
+
+@media screen and (max-width:750px){
+
+    .tabela{
+
+        width: 100%;
+    
+    }
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sudoku Solver</title>
+
+</head>
+<body onload="tabelas()">
+
+    <main>
+
+        <section id="titulo">
+
+            <h1>Sudoku</h1>
+
+        </section>
+
+        <section class="tabela">
+
+            <h1>Insira aqui</h1>
+
+            <div id="tabelaInicial"></div>
+
+            <div id="botoes">
+
+                <input type="button" value="Limpar" onclick="limpar()">
+                <input type="button" value="Resolver" onclick="resolver()">
+                <input type="button" value="Trabalho" onclick="trabalho()">
+
+            </div>
+
+        </section>
+
+        <section class="tabela">
+
+            <h1>Resposta</h1>
+
+            <div id="tabelaFinal"></div>
+
+            <p id="tentativas"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script/script.js"></script>
+    
+</body>
+</html>
+
+<!-- 
+   ,';,               ,';,
+ ,' , :;             ; ,,.;
+ | |:; :;           ; ;:|.|
+ | |::; ';,,,,,,,,,'  ;:|.|    ,,,;;;;;;;;,,,
+ ; |''  ___      ___   ';.;,,''             ''';,,,
+ ',:   /   \    /   \    .;.                      '';,
+ ;    /    |    |    \     ;,                        ';,
+;    |    /|    |\    |    :|                          ';,
+|    |    \|    |/    |    :|     ,,,,,,,               ';,
+|     \____| __ |____/     :;  ,''                        ;,
+;           /  \          :; ,'                           :;
+ ',        `----'        :; |'                            :|
+   ',,  `----------'  ..;',|'                             :|
+  ,'  ',,,,,,,,,,,;;;;''  |'                              :;
+,'  ,,,,                  |,                              :;
+| ,'   :;, ,,''''''''''   '|.   ...........                ';,
+;       :;|               ,,';;;''''''                      ';,
+ ',,,,,;;;|.............,'                          ....      ;,
+           ''''''''''''|        .............;;;;;;;''''',    ':;
+                       |;;;;;;;;'''''''''''''             ;    :|
+                                                      ,,,'     :;
+                                          ,,,,,,,,,,''       .;'
+                                         |              .;;;;'
+                                         ';;;;;;;;;;;;;;'
+-->
