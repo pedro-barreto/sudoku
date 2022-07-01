@@ -67,7 +67,8 @@
 
 #botoes input:hover{
 
-    background-color: whitesmoke;
+    background-color: rgb(225, 225, 225);
+    transform: scale(0.9);
 
 }
 

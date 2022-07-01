@@ -362,16 +362,15 @@ function preencherTabela(){
 
 			for(let j = 0 ; j <= 8 ; j++){
 	
-				let x = document.querySelector('#resposta'+i+j).value = sudokuFinal[i][j]
+				document.querySelector('#resposta'+i+j).value = sudokuFinal[i][j]
 				document.querySelector('#resposta'+i+j).setAttribute('class','certo')
 	
 			}
 		
 		}
 
-		let temp = document.querySelector('#tentativas')
-		temp.innerHTML = 'Tentativas: ' + tentativas
-		document.querySelector('#tabelaFinal').appendChild(temp)
+		let tent = document.querySelector('#tentativas').innerHTML = 'Tentativas: ' + tentativas
+		document.querySelector('#tabelaFinal').appendChild(tent)
 
 		
 		
