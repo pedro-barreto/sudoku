@@ -377,7 +377,7 @@ function preencherTabela(){
 		
 	}else{
 		
-        //errado
+        window.alert('Preencha os campos corretamente!')
 		
 	}
 
