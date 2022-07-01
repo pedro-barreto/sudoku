@@ -418,17 +418,47 @@ function tabelas(){
 
 			}
 
+			if(((i)%3)==0){
+
+				campo.style.borderTop = 'solid 1px black'
+				resposta.style.borderTop = 'solid 1px black'
+
+			}
+
+			if(((j)%3) == 0){
+
+				
+
+				campo.style.borderLeft = 'solid 1px black'
+				resposta.style.borderLeft = 'solid 1px black'
+
+			}
+
 			if(i == 0){
 
-				campo.style.borderTop = 'solid 2px black'
-				resposta.style.borderTop = 'solid 2px black'
+				campo.style.borderTop = 'solid 3px black'
+				resposta.style.borderTop = 'solid 3px black'
 
 			}
 
 			if(j == 0){
 
-				campo.style.borderLeft = 'solid 2px black'
-				resposta.style.borderLeft = 'solid 2px black'
+				campo.style.borderLeft = 'solid 3px black'
+				resposta.style.borderLeft = 'solid 3px black'
+
+			}
+
+			if(i == 8){
+
+				campo.style.borderBottom = 'solid 3px black'
+				resposta.style.borderBottom = 'solid 3px black'
+
+			}
+
+			if(j == 8){
+
+				campo.style.borderRight = 'solid 3px black'
+				resposta.style.borderRight = 'solid 3px black'
 
 			}
 	

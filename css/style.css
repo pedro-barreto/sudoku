@@ -31,7 +31,7 @@
 .tabela input[type=text]{
 
     width: 40px;
-    height: 30px;
+    height: 40px;
     font-size: larger;
     padding-left: 14px;
     border: dashed 1px black;
@@ -81,6 +81,12 @@
 
 @media screen and (max-width:440px){
 
+    #titulo h1{
+
+        margin: 20px auto 30px;
+    
+    }
+
     #botoes input{
 
         padding: 10px 10px;
@@ -90,7 +96,7 @@
     .tabela input[type=text]{
 
         width: 30px;
-        height: 20px;
+        height: 30px;
         font-size: medium;
         padding-left: 8px;
     
