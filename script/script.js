@@ -302,6 +302,8 @@ function pegarValores(){
 	
 }
 
+let tent = document.createElement('p')
+
 function preencherTabela(){
 
 	let tentativas = 0, num = [1,2,3,4,5,6,7,8,9]
@@ -368,10 +370,9 @@ function preencherTabela(){
 			}
 		
 		}
-
-		let tent = document.querySelector('#tentativas').innerHTML = 'Tentativas: ' + tentativas
-		document.querySelector('#tabelaFinal').appendChild(tent)
-
+		
+		tent.innerHTML = `Tentativas: ${tentativas}`
+		document.querySelector('#tentativas').appendChild(tent)
 		
 		
 	}else{
