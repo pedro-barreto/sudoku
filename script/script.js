@@ -278,8 +278,10 @@ function checarTudo(numero, linha, coluna){
 	
 }
 
-function pegarValores(){
-	
+var sudokuTemp = [[],[],[],[],[],[],[],[],[]]
+
+function salvarValores(){
+
 	for(let i = 0 ; i <= 8 ; i++){
 		
 		for(let j = 0 ; j <= 8 ; j++){
@@ -288,13 +290,27 @@ function pegarValores(){
 			
 			if(valorTabela == ''){
 
-				sudokuFinal[i][j] = 0
+				sudokuTemp[i][j] = 0
 
 			}else{
 
-				sudokuFinal[i][j] = valorTabela
+				sudokuTemp[i][j] = valorTabela
 
 			}
+			
+		}
+	
+	}
+
+}
+
+function pegarValores(){
+	
+	for(let i = 0 ; i <= 8 ; i++){
+		
+		for(let j = 0 ; j <= 8 ; j++){
+			
+			sudokuFinal[i][j] = sudokuTemp[i][j]
 			
 		}
 	
@@ -308,6 +324,7 @@ function preencherTabela(){
 
 	let tentativas = 0, num = [1,2,3,4,5,6,7,8,9]
 
+	salvarValores()
 	pegarValores()
 
 	if(verificarSudoku() == true){

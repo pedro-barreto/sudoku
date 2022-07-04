@@ -6,6 +6,13 @@
 
 }
 
+body{
+
+    max-width: 1500px;
+    margin: auto;
+
+}
+
 #titulo h1{
 
     text-align: center;
